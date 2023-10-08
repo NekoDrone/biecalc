@@ -4,6 +4,8 @@ Name: Sylfr Serenity Tan Yi Qing
 
 Matric. No.:
 
+All of the code written in the source files, and as attached in this document were written on MATLAB release R2021b.
+
 ## Assignment 1
 
 The questions chosen for this assignment are as follows: 1,2,3,4,6. There is no solution for 5.
@@ -20,7 +22,12 @@ https://github.com/NekoDrone/biecalc/ under `./bg2211/assignment 1/src/`
 
 The source code for this solution can be found in `./question1/index.m`. Comments are included in the source file for further explanations and considerations.
 
-\*insert images here.
+`./question1/index.m`:
+![q1a-source](./assets/q1/q1a-source.png)
+
+Plot of t against y for Q1a.
+
+![q1a-graph](./assets/q1/q1a-graph.png)
 
 <br></br>
 
@@ -30,7 +37,19 @@ The source code for this solution can be found in `./question1/index.m`. Comment
 
 The source code for this solution can be found in `./question1/index.m` and `./question1/equationToPlotFor1b.m`. Comments are included in the source file for further explanations and considerations.
 
-\*insert images here
+`./question1/index.m`:
+
+![q1b-source](./assets/q1/q1b-source.png)
+
+`./question1/equationToPlotFor1b.m`:
+
+![q1b-source-eqnCalc](./assets/q1/q1b-source-eqnCalc.png)
+
+Plot of t against y for Q1a.
+
+![q1b-graph](./assets/q1/q1b-graph.png)
+
+As shown above, the plots for both approaches overlap quite well.
 
 <br></br>
 
@@ -50,7 +69,27 @@ The source code for this solution can be found in `./question2/index.m` and in p
 
 The solution uses a recursive function, rather than an iterative function, in order to perform the elimination to get the upper triangular matrix. The backwards substitution was done iteratively, as the substitution can be done using a matrix dot product instead of performing a recursive calculation.
 
-\*insert images here
+The biggest consideration for this question was adapting it to be able to solve for any system of equations of any size (up to a reasonable limit). The solution was tested up to 6 unknowns with 6 equations.
+
+`./question2/index.m`:
+
+![q2-source-index](./assets/q2/q2-source-index.png)
+
+`./question2/gaussElim.m`:
+
+![q2-source-gaussElim](./assets/q2/q2-source-gaussElim.png)
+
+![q2-source-pivot](./assets/q2/q2-source-pivot.png)
+
+![q2-source-recursion](./assets/q2/q2-source-recursion.png)
+
+![q2-source-substitution](./assets/q2/q2-source-substitution.png)
+
+Output:
+
+![q2-output](./assets/q2/q2-output.png)
+
+The intention behind using a recursive solution rather than an interative one was to increase extensibility. For a system of equation of n unknowns, utilising a recursive function allows for the solution to operate at $O(n)$ time complexity, whereas the iterative solution would operate at $O(n^2)$ time complexity, due to the nested for loops in the iterative solution.
 
 <br></br>
 
@@ -62,7 +101,21 @@ _Consider the function $f(x)=x^3-2x+4$ on the interval $[-1.1]$ with $h=0.25$. W
 
 The source code for this solution can be found in `./question3/index.m` and in particular, `./question3/calcDerivative.m`. Comments are included in the source file for further explanations and considerations.
 
-\*insert images here.
+`./question3/index.m`: Generate points for input
+
+![q3-source-index](./assets/q3/q3-source-index.png)
+
+`./question3/f.m`: Input function
+
+![q3-source-func](./assets/q3/q3-source-func.png)
+
+`./question3/calcDerivative.m`:
+
+![q3-source-derivativeCalc](./assets/q3/q3-source-derivativeCalc.png)
+
+Output:
+
+![q3-output](./assets/q3/q3-output.png)
 
 <br><br/>
 
@@ -88,7 +141,19 @@ The source code for this solution can be found in `./question4/index.m` and in p
 
 Additionally, in `../../newtonRaphson.ts`, a generalised Newton-Raphson implementation written in TypeScript can be found.
 
-\*insert images here
+`./question4/index.m`:
+
+![q4-source-index](./assets/q4/q4-source-index.png)
+
+`./question4/newtonRaphson.m`:
+
+![q4-source-newtonRaphson](./assets/q4/q4-source-newtonRaphson.png)
+
+Output:
+
+![q4-output](./assets/q4/q4-output.png)
+
+As seen above, this implementation of Newton Raphson was able to get close to both roots, with the guess starting at 0 being less accurate than the guess starting at 3. However, with one more additional iteration on this, it would most likely converge to the analytically solved value of the root.
 
 <br></br>
 
@@ -114,6 +179,20 @@ _c) $x^2+4x+5$_
 
 ---
 
-The source code for this solution can be found in `./question6/index.m` and in particular, `./question4/quadraticSolver.m`. Comments are included in the source file for further explanations and considerations.
+The source code for this solution can be found in `./question6/index.m` and in particular, `./question6/quadraticSolver.m`. Comments are included in the source file for further explanations and considerations.
 
-\*insert images here
+`./question6/index.m`:
+
+![q6-source-index](./assets/q6/q6-source-index.png)
+
+`./question6/quadraticSolver.m`:
+
+![q6-source-quadraticSolver](./assets/q6/q6-source-quadraticSolver.png)
+
+Outputs:
+
+a) ![q6-output-a](./assets/q6/q6-output-a.png)
+
+b) ![q6-output-b](./assets/q6/q6-output-b.png)
+
+c) ![q6-output-c](./assets/q6/q6-output-c.png)
