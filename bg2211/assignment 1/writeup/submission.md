@@ -6,6 +6,10 @@ Matric. No.:
 
 All of the code written in the source files, and as attached in this document were written on MATLAB release R2021b.
 
+This report is accessible online in the event of errors with printing the pictures. The link can be found below.
+
+https://github.com/NekoDrone/biecalc/blob/main/bg2211/assignment%201/writeup/submission.md
+
 ## Assignment 1
 
 The questions chosen for this assignment are as follows: 1,2,3,4,6. There is no solution for 5.
