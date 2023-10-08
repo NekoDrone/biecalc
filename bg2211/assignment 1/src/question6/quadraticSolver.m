@@ -4,11 +4,11 @@ function quadraticSolver()
     a = input("Please enter the coefficient of x^2, a: ");
     b = input("Please enter the coefficient of x, b: ");
     c = input("Please enter constant c: ");
-    determinant = b^2 -4*a*c;
-    if determinant < 0
+    discriminant = b^2 -4*a*c;
+    if discriminant < 0
         disp ("Equation has no real roots")
     else
-        if determinant == 0
+        if discriminant == 0
             disp("Equation has one real root (double root):")
             answer = solveQuadratic(a,b,c);
             disp(answer)
